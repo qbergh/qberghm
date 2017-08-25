@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="NL">
+<head>
+  <meta charset="utf-8">
+    <title>Quinten Berghman</title>
+    <meta name="description" content="Portfolio van Quinten Berghman">
+    <meta name="author" content="Quinten Berghman">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+
+<body>
+    
+    <header>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+        </ul>
+    </header>
+    
+    <main class="portfolioMain">
+            <a href="projecten/project01.html"><img class="portfolio_item" src="img/portfolio/overlevenendoodposter.jpg"></a>
+            <a href="projecten/project02.html"><img class="portfolio_item" src="img/portfolio/compositeposter.jpg"></a>
+            <a href="projecten/project03.html"><img class="portfolio_item" src="img/portfolio/anderewereldposter.jpg"></a>
+            <a href="projecten/project04.html"><img class="portfolio_item" src="img/portfolio/grietjeposter.jpg"></a>
+            <a href="projecten/project05.html"><img class="portfolio_item" src="img/portfolio/giveyoursmile.jpg"></a>
+            <a href="projecten/project06.html"><img class="portfolio_item" src="img/portfolio/huisstijlposter.jpg"></a>
+            <a href="projecten/project07.html"><img class="portfolio_item" src="img/portfolio/LAsummit_teaser.jpg"></a>
+            <a href="projecten/project08.html"><img class="portfolio_item" src="img/portfolio/myspeakerbusiness_teaser.jpg"></a>
+            <a href="projecten/project09.html"><img class="portfolio_item" src="img/portfolio/wizzy_laptop.jpg"></a>
+         <!--<a href="projecten/project10.html"><img class="portfolio_item" src="img/portfolio/dcglaptop.jpg"></a>-->
+    </main>
+    
+    <footer>
+        <ul>
+            <li><a href="mailto:quinten.berghman@hotmail.com?Subject=Hey Mr. Berghman!"><i class="fa fa-envelope-o"></i></a></li>
+            <li><a href="https://www.facebook.com/quinten.berghman" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="http://www.linkedin.com/in/quinten-berghman-69808488" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+    
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>        
+        window.onload = function() {
+            $('.portfolioMain').isotope({
+                  itemSelector: '.portfolio_item',
+                  layoutMode: 'masonry'
+                });
+        };
+    </script>
+</body>
+</html>
